@@ -25,3 +25,4 @@ deploy:
   script:
     - echo "Script before deploy"
     - python main.py
+
