@@ -3,8 +3,8 @@ architect:
   - ulysseses
 
 #### (Secret) Assets
-assets:
-  secret.csv: "ulysseses/secret-repo#assets/secret.csv"
+#assets:
+#  secret.csv: "ulysseses/secret-repo#assets/secret.csv"
 # add @rultor into list of collabs into priv repo
 # priv repo must contain .rultor.yml where the "friends" section
 # should include the name of the repo where the assets are used,
