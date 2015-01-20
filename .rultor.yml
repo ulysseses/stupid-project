@@ -16,13 +16,15 @@ assets:
 
 #### Environment Variables
 env:
-  MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
+  BOGUS_VAR: "lel"
 merge:
   script:
-    - mvn clean install
+    - echo "Script before merge"
+    - python main.py
 deploy:
   script:
-    - mvn clean deploy
+    - echo "Script before deploy"
+    - python main.py
 
 
   
