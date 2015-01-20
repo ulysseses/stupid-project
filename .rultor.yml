@@ -1,0 +1,28 @@
+#### Architect
+architect:
+  - ulysseses
+
+#### (Secret) Assets
+assets:
+  secret.csv: "ulysseses/secret-repo#assets/secret.csv"
+# add @rultor into list of collabs into priv repo
+# priv repo must contain .rultor.yml where the "friends" section
+# should include the name of the repo where the assets are used,
+# e.g.
+#
+# friends:
+#   - ulysseses/stupid-project
+#   - lolzors/*
+
+#### Environment Variables
+env:
+  MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
+merge:
+  script:
+    - mvn clean install
+deploy:
+  script:
+    - mvn clean deploy
+
+
+  
